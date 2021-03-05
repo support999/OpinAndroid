@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6c63ff</color>
+    <color name="colorPrimaryDark">#6384F3</color>
+    <color name="colorAccent">#B4C4FE</color>
+    <color name="strasnparent_bg_color">#664A154B</color>
+    <color name="background_custom_layout">#D9C4CF</color>
+    <color name="active_dots">#6c63ff</color>
+    <color name="inactive_dots">#B4C4FE</color>
+</resources>

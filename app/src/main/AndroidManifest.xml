@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.amit.opinverse">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/op_logo_fancy"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ContactsActivity"></activity>
+        <activity android:name=".GrievanceActivity" />
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".PaymentHistoryActivity" />
+        <activity android:name=".ClientActivity" />
+        <activity android:name=".EditProfile" />
+        <activity android:name=".TeamMenuActivity" />
+        <activity android:name=".TempActivity" />
+        <activity android:name=".PaymentActivity" />
+        <activity android:name=".FaqActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".CalendarActivity" />
+        <activity android:name=".AccountActivity" />
+        <activity android:name=".ReferralActivity" />
+        <activity android:name=".TeamView" />
+        <activity android:name=".TeamActivity" />
+        <activity android:name=".ActivitySocialFeed" />
+        <activity android:name=".AssignmentTaskActivity" />
+        <activity android:name=".VideoActivity" />
+        <activity android:name=".Paymentdetails" />
+        <activity android:name=".Subspages" />
+        <activity android:name=".Splesh">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".TeamTableActivity" />
+        <activity android:name=".Enrolle" />
+        <activity android:name=".Login" />
+        <activity android:name=".Signup" />
+        <activity android:name=".Sliderpage" />
+        <activity android:name=".Pramotion" />
+        <activity android:name=".Setting" />
+        <activity android:name=".Wallet" />
+        <activity android:name=".TutorialActivity" />
+        <activity android:name=".ModuleActivity" />
+        <activity android:name=".SocialCategory" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".NewCredential" />
+        <activity android:name=".Verify" />
+        <activity
+            android:name="com.paytm.pgsdk.PaytmPGActivity"
+            android:configChanges="keyboardHidden|orientation|keyboard"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".FCM"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+    </application>
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+
+</manifest>

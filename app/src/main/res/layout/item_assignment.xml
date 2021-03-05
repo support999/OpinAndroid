@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+    <TextView
+        android:id="@+id/assgnName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        android:padding="10dp"
+        android:text="Assignment 1"
+        android:background="#D9C4CF"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/extendedLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="400dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/assgnSubName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="Assignment Task 1"
+                android:textColor="#000"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="2"
+                android:stepSize="1"
+                android:progressTint="@android:color/holo_green_light"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:paddingBottom="10dp"
+            android:id="@+id/assgnText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:paddingEnd="20dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="Lorem Ipsum dolor sit amet, consectetur, adipiscing elit, Nunc maximus, nulla ut, commodo sagitis, sapien dui, mattis dui, non"/>
+
+        <ImageView
+            android:id="@+id/assgnCertificate"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:src="@color/colorPrimaryDark"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".Enrolle">
+
+    <ImageView
+        android:id="@+id/enrolle_img"
+        android:layout_width="match_parent"
+        android:layout_height="421dp"
+        android:src="@drawable/enroll_bg" />
+
+    <LinearLayout
+        android:id="@+id/signin_btns"
+        android:layout_width="match_parent"
+        android:layout_height="165dp"
+        android:layout_below="@id/enrolle_img"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/signup_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bordered_btn_bg"
+            android:onClick="movetosignup"
+            android:text="Sign Up"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+
+        <Button
+            android:id="@+id/login_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/bordered_btn_bg"
+            android:onClick="movetologin"
+            android:text="Log In"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#FFF"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

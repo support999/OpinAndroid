@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Home"
+        android:icon="@drawable/ic_home"/>
+    <item
+        android:id="@+id/pramotion"
+        android:title="Promotion"
+        android:icon="@drawable/ic_pramotion"/>
+    <item
+        android:id="@+id/team"
+        android:title="Team"
+        android:icon="@drawable/ic_team"/>
+
+    <item
+        android:id="@+id/wallet"
+        android:title="Wallet"
+        android:icon="@drawable/ic_wallet"/>
+    <item
+        android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/ic_settings" />
+</menu>

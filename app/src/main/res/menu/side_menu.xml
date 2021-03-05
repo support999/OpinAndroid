@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:checked="false"
+            android:icon="@drawable/ic_home"
+            />
+
+        <item
+            android:id="@+id/nav_notification"
+            android:title="Notification"
+            android:checked="false"
+            android:icon="@drawable/notifications"
+            />
+
+        <item
+            android:id="@+id/nav_contacts"
+            android:title="Contacts"
+            android:checked="false"
+            android:icon="@drawable/ic_pramotion"
+            />
+
+        <item
+            android:id="@+id/nav_profile"
+            android:title="Profile"
+            android:checked="false"
+            android:icon="@drawable/profile"
+            />
+
+        <item
+            android:id="@+id/nav_account"
+            android:title="Account"
+            android:checked="false"
+            android:icon="@drawable/account"
+            />
+
+        <item
+            android:id="@+id/nav_calendar"
+            android:title="Calendar"
+            android:checked="false"
+            android:icon="@drawable/calendar"
+            />
+    </group>
+</menu>

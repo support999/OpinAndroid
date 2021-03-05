@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView app:cardCornerRadius="20dp"
+    app:cardElevation="8dp"
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/moduleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="1dp"
+            android:background="@drawable/semi_rounded_bg"
+            android:backgroundTint="#D9C4CF"
+            android:baselineAligned="false"
+            android:padding="5dp"
+            android:text="Module Name"
+            android:paddingStart="20dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tutorialDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:paddingTop="10dp"
+            android:paddingStart="20dp"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:paddingEnd="20dp"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="Lorem Ipsum dolor sit amet, consectetur, adipiscing elit, Nunc maximus, nulla ut, commodo sagitis, sapien dui, mattis dui, non"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutorial"
+            android:textSize="14sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#000"/>
+
+        <ProgressBar
+            android:id="@+id/tutorialProgress"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:indeterminate="false"
+            android:layout_height="2dp"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressTint="@android:color/holo_orange_light"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:max="100"
+            android:progress="20"/>
+
+        <TextView
+            android:id="@+id/tutorialLength"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:text="TIME HERE"
+            android:textColor="#ffffbb33"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/ic_baseline_play_circle_outline_24"
+            android:layout_marginEnd="20dp"/>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
